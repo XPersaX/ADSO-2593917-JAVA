@@ -1,38 +1,30 @@
 import java.util.Scanner;
 
 public class Ejercicio2{
-    public static void main(String[]args){
+   public static void main(String[]args){
+      Scanner entrada=new Scanner(System.in);
 
-        Scanner entrada=new Scanner(System.in);
-
-        int valor;
+    int valor;
      System.out.println("ESCRIBA UN NUMERO DE 3 DIGITOS");
      valor=entrada.nextInt();
      int codigo=valor % 2 ;
      if(codigo==0){
-        System.out.print("Par");
+        System.out.print("El numero es Par");
      }
      else{
-        System.out.print("Impar");
+        System.out.print("El numero es Impar");
      }
-
-        
-
-
-
-
-
-
-    }
-
-
-
-
-
-
-
-
-
-
+ 
+   }
 
 }
+
+
+
+
+
+
+
+
+
+

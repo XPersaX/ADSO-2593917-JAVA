@@ -7,6 +7,7 @@ public class Triki{
 	private char tablero[][];
 	private boolean en_juego;
 	private int cant_jugadas;
+
 	public Triki(){
 		this.jugador_1 = "";
 		this.jugador_2 = "";
@@ -16,6 +17,7 @@ public class Triki{
 		this.tablero = new char [3][3];
 		this.limpiarTablero();
 	}
+
 	public void limpiarTablero(){
 		for (int i=0; i<this.tablero.length; i++ ) {
 			for (int j=0; j<this.tablero[i].length; j++) {
@@ -23,6 +25,7 @@ public class Triki{
 			}
 		}
 	}
+
 	public void imprimirTablero(){
 		for (int i=0; i<this.tablero.length; i++ ) {
 			for (int j=0; j<this.tablero[i].length; j++) {
@@ -38,7 +41,7 @@ public class Triki{
 
 	public boolean validarCasillaVacia(int fila, int columna){
 		if (this.tablero[fila][columna] == '-') {
-			return true; 
+			return true;
 		}else{
 			return false;
 		}
@@ -63,7 +66,7 @@ public class Triki{
 		if ( (this.tablero[0][0]==this.tablero[0][1] && this.tablero[0][0]==this.tablero[0][2] && this.tablero[0][0]!='-') || 
 			 (this.tablero[1][0]==this.tablero[1][1] && this.tablero[1][0]==this.tablero[1][2] && this.tablero[1][0]!='-') || 
 			 (this.tablero[2][0]==this.tablero[2][1] && this.tablero[2][0]==this.tablero[2][2] && this.tablero[2][0]!='-') ||
-
+			 
 			 (this.tablero[0][0]==this.tablero[1][0] && this.tablero[0][0]==this.tablero[2][0] && this.tablero[0][0]!='-') || 
 			 (this.tablero[0][1]==this.tablero[1][1] && this.tablero[0][1]==this.tablero[2][1] && this.tablero[0][1]!='-') || 
 			 (this.tablero[0][2]==this.tablero[1][2] && this.tablero[0][2]==this.tablero[2][2] && this.tablero[0][2]!='-') || 
@@ -90,7 +93,7 @@ public class Triki{
 		do{
 			// Imprimir el tablero
 			this.imprimirTablero();
-
+			
 			// Pedir la posicion al jugador actual
 			System.out.print("=> Jugador "+this.jugadorActual()+" ingrese fila: ");
 			int fila = entrada_numero.nextInt();

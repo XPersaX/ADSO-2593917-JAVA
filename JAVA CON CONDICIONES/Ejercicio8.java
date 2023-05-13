@@ -26,22 +26,22 @@ public class Ejercicio8{
         else if(digito_6==8){
             System.out.print("OCHOCIENTOS");
         }
-         else if(digito_6==7){
+        else if(digito_6==7){
             System.out.print("SETECIENTOS");
         }
          else if(digito_6==6){
             System.out.print("SEICIENTOS");
         }
-         else if(digito_6==5){
+        else if(digito_6==5){
             System.out.print("QUNIENTOS");
         }
-         else if(digito_6==4){  
+        else if(digito_6==4){  
             System.out.print("CUATROCIENTOS");
         }
-         else if(digito_6==3){
+        else if(digito_6==3){
             System.out.print("TRECIENTOS");
         }
-         else if(digito_6==2){
+        else if(digito_6==2){
             System.out.print("DOCIENTOS");
         }else if(digito_6==1){
             if(digito_5==0 && digito_4==0){
