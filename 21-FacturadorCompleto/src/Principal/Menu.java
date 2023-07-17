@@ -489,7 +489,6 @@ public class Menu extends JFrame {
 
     private void btnModificarProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModificarProductoActionPerformed
         setVisible(false);
-        
         ModificarProductos ventana = new ModificarProductos(this);
         ventana.setVisible(true);
     }//GEN-LAST:event_btnModificarProductoActionPerformed

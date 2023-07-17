@@ -311,8 +311,6 @@ public class ModificarProductos extends javax.swing.JFrame {
             deshabilitarCampo(campoDescripcion);
             deshabilitarCampo(campoPrecio);
             deshabilitarCampo(campoCantidad);
-            
-            
             campoid.requestFocus();
             btnModificar.setEnabled(false);
         }

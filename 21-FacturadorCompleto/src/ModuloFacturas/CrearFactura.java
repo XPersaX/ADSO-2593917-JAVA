@@ -431,7 +431,7 @@ public class CrearFactura extends JFrame{
         };
         btn_atras.addActionListener(eventoAtras); 
         
-                KeyListener eventoKeyBuscarProducto = new KeyListener(){
+            KeyListener eventoKeyBuscarProducto = new KeyListener(){
             public void keyPressed(KeyEvent e){
             }
 
@@ -445,11 +445,11 @@ public class CrearFactura extends JFrame{
                 if (e.getKeyCode()==10) {
                     buscarProducto();
                 }else if (e.getKeyCode()==8) {
-                        input_nombre_producto.setText("");
+                    input_nombre_producto.setText("");
                     input_cant_producto.setText("");
                     deshabilitarInput(input_nombre_producto);
                 }else if (e.getKeyCode()!=16){
-                        input_nombre_producto.setText("");
+                    input_nombre_producto.setText("");
                     input_cant_producto.setText("");
                     deshabilitarInput(input_nombre_producto);
                     buscarProducto();
@@ -680,6 +680,4 @@ public class CrearFactura extends JFrame{
     private JButton btn_buscar_cliente;
     private JButton btn_buscar_vendedor;
     private JButton btn_add_producto;
-    
-
 }
