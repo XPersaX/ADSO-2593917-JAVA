@@ -289,11 +289,11 @@ public class RealizarAlquiler extends javax.swing.JFrame {
     public void cambiarEstado(){
         Autos listaAutos [] = this.ventanaMenu.database.listaAutosLibres();
         
-        if (listaAutos!=null) {
-            for(int i = 0; i < listaAutos.length; i++){
-                    if(listaAutos[i] != null){
+        for(int i = 0; i < listaAutos.length; i++){
+                if(listaAutos[i] != null){
+                    if(listaAutos[i].getPlaca().equals(Placa)){
                         JLabel Temporal = new JLabel(" " + listaAutos[i].getId()+" - "+listaAutos[i].getMarca()+" "+listaAutos[i].getModelo()+" - "+listaAutos[i].getKilometraje()+" - "+listaAutos[i].getValorAlquiler()+" - "+listaAutos[i].getColor()+" - "+listaAutos[i].getPlaca()+" - "+listaAutos[i].getTransmision()+" - "+listaAutos[i].getTamaño()+" - "+listaAutos[i].getAire_acondicionado()+" - "+listaAutos[i].getFecha() +" - "+ listaAutos[i].getEstado());
-                        
+
                         Temporal.setFont(new Font("Arial", Font.PLAIN, 12));
                         Temporal.setBorder(new EmptyBorder(2,10,2,10));
 
@@ -312,12 +312,12 @@ public class RealizarAlquiler extends javax.swing.JFrame {
                         Autos temporal = new Autos(id,marca,modelo,kilometraje,ValorAlquiler ,color,placa,transmision,tamano,aire_acondicionado,fecha,estado);
                         boolean proceso = this.ventanaMenu.database.editarEstadoAlquilado(temporal);
                         break;
-                    }else{
-                        break;
                     }
-            }
-            revalidate();
+                }else{
+                    break;
+                }
         }
+        revalidate();
     }
     
     
