@@ -1,0 +1,150 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Resumen">
+
+    <!-- Contenedor principal -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="15dp"
+        >
+
+        <TextView
+            android:id="@+id/etq_nombres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="35dp"
+            android:textStyle="bold"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha Inicio"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginRight="15dp">
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/fecha_inicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2024-02-08"
+                android:textSize="20dp">
+
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Preguntas:"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginRight="25dp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/etq_preguntas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="20dp"
+                android:textStyle="bold">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Correctas:"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginRight="29dp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/etq_preguntas_correctas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#4CAF50">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Incorrectas:"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginRight="15dp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/etq_preguntas_incorrectas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#C50926">
+            </TextView>
+        </LinearLayout>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#6A6868"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/contendor_principal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom|right"
+        android:backgroundTint="#C1101F"
+        android:text="Atras"
+        android:textSize="20sp"
+        android:onClick="Atras"/>
+</FrameLayout>

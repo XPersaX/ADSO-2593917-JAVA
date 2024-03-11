@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Iniciar Sesión"
+        android:textSize="40dp"
+        android:textColor="#0D408C"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@mipmap/icono_preguntas_round"
+        android:layout_gravity="center"
+
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26dp"
+            android:textColor="#0D408C"
+            android:text="Correo"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/campo_correo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp"
+            android:background="#D3CACA"
+            android:text="Jose@gmail.com"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26dp"
+            android:textColor="#0D408C"
+            android:text="Contraseña"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/campo_contrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp"
+            android:background="#D3CACA"
+            android:text="1234"
+            android:inputType="textPassword"
+            android:padding="10dp" />
+
+
+        <Button
+
+            android:id="@+id/button_get_into"
+            android:layout_width="248dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Ingresar"
+            android:textColor="@color/black"
+            android:backgroundTint="#0D408C"
+            android:textSize="20sp"
+            android:onClick="validarIngreso"
+            />
+
+        <TextView
+            android:id="@+id/etq_error"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:textColor="#9A170E"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
